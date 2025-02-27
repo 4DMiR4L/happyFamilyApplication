@@ -1,9 +1,10 @@
 package main;
 
 import java.util.List;
+import java.util.Set;
 
 public class DomesticCat extends Pet{
-    public DomesticCat(Species species, String nickName, int age, int trickLevels, List<String> habits) {
+    public DomesticCat(Species species, String nickName, int age, int trickLevels, Set<String> habits) {
         super(species, nickName, age, trickLevels, habits);
     }
 

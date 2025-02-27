@@ -1,9 +1,6 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
 
@@ -20,11 +17,11 @@ public class Main {
         schedule.put("Saturday", "Watch TV");
         schedule.put("Sunday", "Rest");
 
-        Pet dog = new Dog(Species.DOG, "a", 75, 6, List.of(new String[]{"eat", "drink", "sleep"}));
-        Pet cat = new DomesticCat(Species.DomesticCat, "b", 50, 5, List.of(new String[]{"play", "sleep"}));
+        Pet dog = new Dog(Species.DOG, "a", 75, 6,Set.of("eat","sleep","drink"));
+        Pet cat = new DomesticCat(Species.DomesticCat, "b", 50, 5, Set.of("eat", "drink", "sleep"));
 
-        Human mother = new Woman("Jane", "Karleone", 1977, 90, dog,null, (List<List<String>>) schedule);
-        Human father = new Man("Vito", "Karleone", 1975, 95, cat, null, (List<List<String>>) schedule);
+        Human mother = new Woman("Jane", "Karleone", 1977, 90, dog,null,schedule);
+        Human father = new Man("Vito", "Karleone", 1975, 95, cat, null, schedule);
         Family family = new Family(mother, father, new ArrayList<>(), null);
 
 

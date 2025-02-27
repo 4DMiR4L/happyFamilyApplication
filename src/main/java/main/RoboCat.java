@@ -1,9 +1,10 @@
 package main;
 
 import java.util.List;
+import java.util.Set;
 
 public class RoboCat extends Pet {
-    public RoboCat(Species species, String nickName, int age, int trickLevels, List<String> habits) {
+    public RoboCat(Species species, String nickName, int age, int trickLevels, Set<String> habits) {
         super(species, nickName, age, trickLevels, habits);
     }
 
