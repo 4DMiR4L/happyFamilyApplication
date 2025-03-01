@@ -1,7 +1,6 @@
 package main.dao;
 
 import main.Family;
-
 import java.util.ArrayList;
 import java.util.List;
 public class CollectionFamilyDao implements FamilyDao {

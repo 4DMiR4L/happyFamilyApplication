@@ -7,14 +7,15 @@ import java.util.Objects;
 public class Family {
     private Human mother;
     private Human father;
-    private List<Human> children = new ArrayList<>();
-    private Pet pet;
+    private List<Human> children;
+    private List<Pet> pet;
 
-    public Family(Human mother, Human father, List<Human> children, Pet pet) {
+
+    public Family(Human mother, Human father) {
         this.mother = mother;
         this.father = father;
-        this.children = children;
-        this.pet = pet;
+        this.children = new ArrayList<>();
+        this.pet = new ArrayList<>();
     }
 
     public Human getMother() {
@@ -41,11 +42,11 @@ public class Family {
         this.children = children;
     }
 
-    public Pet getPet() {
+    public List<Pet> getPet() {
         return pet;
     }
 
-    public void setPet(Pet pet) {
+    public void setPet(List<Pet> pet) {
         this.pet = pet;
     }
 
