@@ -1,10 +1,11 @@
 package main;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Family {
+public class Family implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Human mother;
     private Human father;
     private List<Human> children;

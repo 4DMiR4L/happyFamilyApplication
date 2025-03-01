@@ -1,9 +1,11 @@
 package main;
 
+import java.io.Serializable;
 import java.util.Objects;
 import java.util.Set;
 
-public abstract class Pet {
+public abstract class Pet implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private Species species;
     private String nickName;

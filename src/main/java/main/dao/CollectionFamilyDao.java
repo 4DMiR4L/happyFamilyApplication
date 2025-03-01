@@ -36,11 +36,11 @@ public class CollectionFamilyDao implements FamilyDao {
 
     @Override
     public void saveFamily(Family family) {
-        if (families.contains(family)){
-            families.add(family);
-        }else {
-            int index = families.indexOf(family);
+        int index = families.indexOf(family);
+        if (index != -1) {  // If family exists, update it
             families.set(index, family);
+        } else {  // Otherwise, add it to the list
+            families.add(family);
         }
     }
 }
