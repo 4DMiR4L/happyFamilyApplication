@@ -57,6 +57,7 @@ public class FileFamilyDao implements FamilyDao {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(families);
         } catch (IOException e) {
+
             e.printStackTrace();
         }
     }
