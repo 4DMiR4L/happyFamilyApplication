@@ -74,8 +74,6 @@ public class Family implements Serializable {
 
 
     public void deleteChild(Human child) {
-
-
         if (children.contains(child)) {
             children.remove(child);
             child.setFamily(null);
