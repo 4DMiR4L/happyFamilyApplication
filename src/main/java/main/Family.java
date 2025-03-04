@@ -65,7 +65,7 @@ public class Family implements Serializable {
     public void addChild(Human child) {
         if (!children.contains(child)) {
             children.add(child);
-            child.setFamily(this); // Çocuğun ailesini güncelle
+            child.setFamily(this);
             System.out.println(child.getName() + " added to the family.");
         } else {
             System.out.println(child.getName() + " is already in the family.");
